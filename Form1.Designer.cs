@@ -40,13 +40,16 @@
             pictureBox1 = new PictureBox();
             checkedListBox1 = new CheckedListBox();
             label2 = new Label();
+            dataGridView1 = new DataGridView();
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // lblNombre
             // 
             lblNombre.AutoSize = true;
-            lblNombre.Location = new Point(249, 205);
+            lblNombre.Location = new Point(271, 103);
             lblNombre.Name = "lblNombre";
             lblNombre.Size = new Size(64, 20);
             lblNombre.TabIndex = 0;
@@ -54,7 +57,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(660, 539);
+            button1.Location = new Point(302, 517);
             button1.Name = "button1";
             button1.Size = new Size(140, 29);
             button1.TabIndex = 1;
@@ -64,7 +67,7 @@
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(348, 209);
+            txtNombre.Location = new Point(370, 107);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(125, 27);
             txtNombre.TabIndex = 2;
@@ -72,7 +75,7 @@
             // lblEdad
             // 
             lblEdad.AutoSize = true;
-            lblEdad.Location = new Point(249, 272);
+            lblEdad.Location = new Point(271, 170);
             lblEdad.Name = "lblEdad";
             lblEdad.Size = new Size(43, 20);
             lblEdad.TabIndex = 3;
@@ -80,7 +83,8 @@
             // 
             // txtEdad
             // 
-            txtEdad.Location = new Point(351, 275);
+            txtEdad.Location = new Point(373, 173);
+            txtEdad.MaxLength = 33434;
             txtEdad.Name = "txtEdad";
             txtEdad.Size = new Size(125, 27);
             txtEdad.TabIndex = 4;
@@ -89,7 +93,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(249, 337);
+            label1.Location = new Point(271, 235);
             label1.Name = "label1";
             label1.Size = new Size(41, 20);
             label1.TabIndex = 5;
@@ -99,7 +103,7 @@
             // rbtnMasculino
             // 
             rbtnMasculino.AutoSize = true;
-            rbtnMasculino.Location = new Point(349, 335);
+            rbtnMasculino.Location = new Point(371, 233);
             rbtnMasculino.Name = "rbtnMasculino";
             rbtnMasculino.Size = new Size(97, 24);
             rbtnMasculino.TabIndex = 6;
@@ -110,7 +114,7 @@
             // rbtnFemenino
             // 
             rbtnFemenino.AutoSize = true;
-            rbtnFemenino.Location = new Point(351, 386);
+            rbtnFemenino.Location = new Point(373, 284);
             rbtnFemenino.Name = "rbtnFemenino";
             rbtnFemenino.Size = new Size(95, 24);
             rbtnFemenino.TabIndex = 7;
@@ -133,7 +137,7 @@
             // 
             checkedListBox1.FormattingEnabled = true;
             checkedListBox1.Items.AddRange(new object[] { "Soltero", "Casado", "Divorciado", "Juntado" });
-            checkedListBox1.Location = new Point(354, 454);
+            checkedListBox1.Location = new Point(376, 352);
             checkedListBox1.Name = "checkedListBox1";
             checkedListBox1.Size = new Size(150, 114);
             checkedListBox1.TabIndex = 9;
@@ -142,18 +146,37 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(249, 454);
+            label2.Location = new Point(271, 352);
             label2.Name = "label2";
             label2.Size = new Size(86, 20);
             label2.TabIndex = 10;
             label2.Text = "Estado Civil";
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(134, 595);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(744, 188);
+            dataGridView1.TabIndex = 11;
+            // 
+            // panel1
+            // 
+            panel1.BorderStyle = BorderStyle.Fixed3D;
+            panel1.Location = new Point(590, 75);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(412, 483);
+            panel1.TabIndex = 12;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(847, 714);
+            ClientSize = new Size(1074, 817);
             ControlBox = false;
+            Controls.Add(panel1);
+            Controls.Add(dataGridView1);
             Controls.Add(label2);
             Controls.Add(checkedListBox1);
             Controls.Add(pictureBox1);
@@ -170,6 +193,7 @@
             WindowState = FormWindowState.Maximized;
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -187,5 +211,7 @@
         private PictureBox pictureBox1;
         private CheckedListBox checkedListBox1;
         private Label label2;
+        private DataGridView dataGridView1;
+        private Panel panel1;
     }
 }

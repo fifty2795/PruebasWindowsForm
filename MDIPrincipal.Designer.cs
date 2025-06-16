@@ -32,13 +32,14 @@
             toolTip = new ToolTip(components);
             menuStrip1 = new MenuStrip();
             usuarioToolStripMenuItem = new ToolStripMenuItem();
+            form1ToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { usuarioToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { usuarioToolStripMenuItem, form1ToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(843, 28);
@@ -51,6 +52,12 @@
             usuarioToolStripMenuItem.Size = new Size(73, 24);
             usuarioToolStripMenuItem.Text = "Usuario";
             usuarioToolStripMenuItem.Click += usuarioToolStripMenuItem_Click;
+            // 
+            // form1ToolStripMenuItem
+            // 
+            form1ToolStripMenuItem.Name = "form1ToolStripMenuItem";
+            form1ToolStripMenuItem.Size = new Size(63, 24);
+            form1ToolStripMenuItem.Text = "form2";
             // 
             // MDIPrincipal
             // 
@@ -74,6 +81,7 @@
         private System.Windows.Forms.ToolTip toolTip;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem usuarioToolStripMenuItem;
+        private ToolStripMenuItem form1ToolStripMenuItem;
     }
 }
 

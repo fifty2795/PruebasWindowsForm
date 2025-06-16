@@ -17,3 +17,27 @@ D:\repos\Pruebas Windows Form\Pruebas\obj\Debug\net8.0-windows\Pruebas.genruntim
 D:\repos\Pruebas Windows Form\Pruebas\obj\Debug\net8.0-windows\ref\Pruebas.dll
 D:\repos\Pruebas Windows Form\Pruebas\obj\Debug\net8.0-windows\Pruebas.Properties.Resources.resources
 D:\repos\Pruebas Windows Form\Pruebas\obj\Debug\net8.0-windows\Pruebas.MDIPrincipal.resources
+D:\GIT\PruebasWindowsForms\bin\Debug\net8.0-windows\Pruebas.exe
+D:\GIT\PruebasWindowsForms\bin\Debug\net8.0-windows\Pruebas.deps.json
+D:\GIT\PruebasWindowsForms\bin\Debug\net8.0-windows\Pruebas.runtimeconfig.json
+D:\GIT\PruebasWindowsForms\bin\Debug\net8.0-windows\Pruebas.dll
+D:\GIT\PruebasWindowsForms\bin\Debug\net8.0-windows\Pruebas.pdb
+D:\GIT\PruebasWindowsForms\obj\Debug\net8.0-windows\Pruebas.Form1.resources
+D:\GIT\PruebasWindowsForms\obj\Debug\net8.0-windows\Pruebas.MDIPrincipal.resources
+D:\GIT\PruebasWindowsForms\obj\Debug\net8.0-windows\Pruebas.Properties.Resources.resources
+D:\GIT\PruebasWindowsForms\obj\Debug\net8.0-windows\Pruebas.csproj.GenerateResource.cache
+D:\GIT\PruebasWindowsForms\obj\Debug\net8.0-windows\Pruebas.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\PruebasWindowsForms\obj\Debug\net8.0-windows\Pruebas.AssemblyInfoInputs.cache
+D:\GIT\PruebasWindowsForms\obj\Debug\net8.0-windows\Pruebas.AssemblyInfo.cs
+D:\GIT\PruebasWindowsForms\obj\Debug\net8.0-windows\Pruebas.csproj.CoreCompileInputs.cache
+D:\GIT\PruebasWindowsForms\obj\Debug\net8.0-windows\Pruebas.sourcelink.json
+D:\GIT\PruebasWindowsForms\obj\Debug\net8.0-windows\Pruebas.dll
+D:\GIT\PruebasWindowsForms\obj\Debug\net8.0-windows\refint\Pruebas.dll
+D:\GIT\PruebasWindowsForms\obj\Debug\net8.0-windows\Pruebas.pdb
+D:\GIT\PruebasWindowsForms\obj\Debug\net8.0-windows\Pruebas.genruntimeconfig.cache
+D:\GIT\PruebasWindowsForms\obj\Debug\net8.0-windows\ref\Pruebas.dll
+D:\GIT\PruebasWindowsForms\bin\Debug\net8.0-windows\Pruebas.Data.dll
+D:\GIT\PruebasWindowsForms\bin\Debug\net8.0-windows\Pruebas.Data.pdb
+D:\GIT\PruebasWindowsForms\obj\Debug\net8.0-windows\Pruebas.csproj.AssemblyReference.cache
+D:\GIT\PruebasWindowsForms\obj\Debug\net8.0-windows\Pruebas.csproj.Up2Date
+D:\GIT\PruebasWindowsForms\obj\Debug\net8.0-windows\Pruebas.Form2.resources

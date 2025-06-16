@@ -1,23 +1,33 @@
 using Microsoft.VisualBasic.Logging;
+using Pruebas.Data.Entidades;
+using System.ComponentModel;
 using System.Xml;
 
 namespace Pruebas
 {
     public partial class Form1 : Form
     {
+        BindingList<Usuario> listaUsuarios = new BindingList<Usuario>();
+        List<Usuario> lstUsuario = new List<Usuario>();        
+
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
+            dataGridView1.DataSource = listaUsuarios;
+
+            AbrirFormularioEnPanel(new Form2());
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             // Este es el codigo que se va ejecutar el hacer click en el boton            
+            Usuario usuario = new Usuario();
 
             if (string.IsNullOrEmpty(txtEdad.Text) || string.IsNullOrEmpty(txtNombre.Text))
             {
@@ -25,15 +35,13 @@ namespace Pruebas
                 return;
             }
 
-            string nombre = txtNombre.Text;
-            int edad = Convert.ToInt16(txtEdad.Text);
+            usuario.Nombre = txtNombre.Text;
+            usuario.Edad = Convert.ToInt16(txtEdad.Text);
+            usuario.EstadoCivil = checkedListBox1.CheckedItems[0].ToString();
 
-            string estadoCivil = checkedListBox1.CheckedItems[0].ToString();
-
-            string sexo = string.Empty;
             string msj = string.Empty;
 
-            switch (estadoCivil)
+            switch (usuario.EstadoCivil)
             {
                 case "Soltero":
 
@@ -61,19 +69,36 @@ namespace Pruebas
 
             if (rbtnMasculino.Checked)
             {
-                sexo = "Masculino";
+                usuario.Sexo = "Masculino";
             }
 
             if (rbtnFemenino.Checked)
             {
-                sexo = "Femenino";
+                usuario.Sexo = "Femenino";
             }
 
-            MessageBox.Show("Nombre de usuario: " + nombre + Environment.NewLine +
-                "Edad de usuario: " + edad + " años. " + Environment.NewLine +
-                "Sexo: " + sexo + Environment.NewLine +
-                "Estado Civil: " + estadoCivil + Environment.NewLine +
-                "Mensaje: " + msj, "Datos del usuario", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            //MessageBox.Show("Nombre de usuario: " + usuario.Nombre + Environment.NewLine +
+            //    "Edad de usuario: " + usuario.Edad.ToString() + " años. " + Environment.NewLine +
+            //    "Sexo: " + usuario.Sexo + Environment.NewLine +
+            //    "Estado Civil: " + usuario.EstadoCivil + Environment.NewLine +
+            //    "Mensaje: " + msj, "Datos del usuario", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+
+            DialogResult result = MessageBox.Show("Nombre de usuario: " + usuario.Nombre + Environment.NewLine +
+                "Edad de usuario: " + usuario.Edad.ToString() + " años. " + Environment.NewLine +
+                "Sexo: " + usuario.Sexo + Environment.NewLine +
+                "Estado Civil: " + usuario.EstadoCivil + Environment.NewLine +
+                "Mensaje: " + msj + Environment.NewLine + Environment.NewLine +
+                "¿Desesas agregar este usuario?",
+                "Agregar Usuario",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                listaUsuarios.Add(usuario);
+                LimpiarFormulario();
+                lstUsuario.Add(usuario);
+            }
         }
 
         private void rbtnFemenino_CheckedChanged(object sender, EventArgs e)
@@ -108,6 +133,41 @@ namespace Pruebas
                     }
                 }
             }
-        }       
+        }
+
+        private void LimpiarFormulario()
+        {
+            txtNombre.Clear();
+            //txtNombre.Text = string.Empty;
+            //txtEdad.Text = string.Empty;
+
+            //rbtnFemenino.Checked = false;
+            //rbtnMasculino.Checked = false;            
+
+            for (int i = 0; i < checkedListBox1.Items.Count; i++)
+            {
+                checkedListBox1.SetItemChecked(i, false);
+            }         
+        }
+
+        private void AbrirFormularioEnPanel(Form formularioHijo)
+        {
+            // Limpiar panel si ya hay algún control cargado
+            panel1.Controls.Clear();
+
+            // Configurar el formulario hijo
+            formularioHijo.TopLevel = false;
+            formularioHijo.FormBorderStyle = FormBorderStyle.None;
+            formularioHijo.Dock = DockStyle.Fill;
+
+            // Agregar al panel y mostrar
+            panel1.Controls.Add(formularioHijo);
+            formularioHijo.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
