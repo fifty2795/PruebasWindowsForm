@@ -1,4 +1,4 @@
-﻿using Pruebas.Data.Entidades;
+﻿using Pruebas.Entidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

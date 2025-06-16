@@ -1,5 +1,5 @@
 using Microsoft.VisualBasic.Logging;
-using Pruebas.Data.Entidades;
+using Pruebas.Entidades;
 using System.ComponentModel;
 using System.Xml;
 

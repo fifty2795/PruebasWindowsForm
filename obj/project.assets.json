@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net8.0-windows7.0": {
-      "Pruebas.Data/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/Pruebas.Data.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Pruebas.Data.dll": {}
-        }
-      }
-    }
+    "net8.0-windows7.0": {}
   },
-  "libraries": {
-    "Pruebas.Data/1.0.0": {
-      "type": "project",
-      "path": "../Pruebas.Data/Pruebas.Data.csproj",
-      "msbuildProject": "../Pruebas.Data/Pruebas.Data.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net8.0-windows7.0": [
-      "Pruebas.Data >= 1.0.0"
-    ]
+    "net8.0-windows7.0": []
   },
   "packageFolders": {
     "C:\\Users\\aleja\\.nuget\\packages\\": {},
@@ -33,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GIT\\PruebasWindowsForms\\Pruebas.csproj",
+      "projectUniqueName": "D:\\tmp2\\Pruebas.csproj",
       "projectName": "Pruebas",
-      "projectPath": "D:\\GIT\\PruebasWindowsForms\\Pruebas.csproj",
+      "projectPath": "D:\\tmp2\\Pruebas.csproj",
       "packagesPath": "C:\\Users\\aleja\\.nuget\\packages\\",
-      "outputPath": "D:\\GIT\\PruebasWindowsForms\\obj\\",
+      "outputPath": "D:\\tmp2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -57,11 +38,7 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "projectReferences": {
-            "D:\\GIT\\Pruebas.Data\\Pruebas.Data.csproj": {
-              "projectPath": "D:\\GIT\\Pruebas.Data\\Pruebas.Data.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
