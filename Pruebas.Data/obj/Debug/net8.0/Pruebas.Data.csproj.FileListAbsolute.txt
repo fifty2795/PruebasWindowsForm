@@ -1,0 +1,12 @@
+D:\GIT\Pruebas.Data\bin\Debug\net8.0\Pruebas.Data.deps.json
+D:\GIT\Pruebas.Data\bin\Debug\net8.0\Pruebas.Data.dll
+D:\GIT\Pruebas.Data\bin\Debug\net8.0\Pruebas.Data.pdb
+D:\GIT\Pruebas.Data\obj\Debug\net8.0\Pruebas.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\Pruebas.Data\obj\Debug\net8.0\Pruebas.Data.AssemblyInfoInputs.cache
+D:\GIT\Pruebas.Data\obj\Debug\net8.0\Pruebas.Data.AssemblyInfo.cs
+D:\GIT\Pruebas.Data\obj\Debug\net8.0\Pruebas.Data.csproj.CoreCompileInputs.cache
+D:\GIT\Pruebas.Data\obj\Debug\net8.0\Pruebas.Data.sourcelink.json
+D:\GIT\Pruebas.Data\obj\Debug\net8.0\Pruebas.Data.dll
+D:\GIT\Pruebas.Data\obj\Debug\net8.0\refint\Pruebas.Data.dll
+D:\GIT\Pruebas.Data\obj\Debug\net8.0\Pruebas.Data.pdb
+D:\GIT\Pruebas.Data\obj\Debug\net8.0\ref\Pruebas.Data.dll
