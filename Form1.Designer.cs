@@ -41,7 +41,6 @@
             checkedListBox1 = new CheckedListBox();
             label2 = new Label();
             dataGridView1 = new DataGridView();
-            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -57,7 +56,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(302, 517);
+            button1.Location = new Point(610, 437);
             button1.Name = "button1";
             button1.Size = new Size(140, 29);
             button1.TabIndex = 1;
@@ -84,7 +83,7 @@
             // txtEdad
             // 
             txtEdad.Location = new Point(373, 173);
-            txtEdad.MaxLength = 33434;
+            txtEdad.MaxLength = 2;
             txtEdad.Name = "txtEdad";
             txtEdad.Size = new Size(125, 27);
             txtEdad.TabIndex = 4;
@@ -155,27 +154,18 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(134, 595);
+            dataGridView1.Location = new Point(126, 516);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(744, 188);
             dataGridView1.TabIndex = 11;
             // 
-            // panel1
-            // 
-            panel1.BorderStyle = BorderStyle.Fixed3D;
-            panel1.Location = new Point(590, 75);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(412, 483);
-            panel1.TabIndex = 12;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1074, 817);
+            ClientSize = new Size(932, 733);
             ControlBox = false;
-            Controls.Add(panel1);
             Controls.Add(dataGridView1);
             Controls.Add(label2);
             Controls.Add(checkedListBox1);
@@ -212,6 +202,5 @@
         private CheckedListBox checkedListBox1;
         private Label label2;
         private DataGridView dataGridView1;
-        private Panel panel1;
     }
 }

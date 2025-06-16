@@ -19,9 +19,7 @@ namespace Pruebas
         {
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-            dataGridView1.DataSource = listaUsuarios;
-
-            AbrirFormularioEnPanel(new Form2());
+            dataGridView1.DataSource = listaUsuarios;            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -137,33 +135,17 @@ namespace Pruebas
 
         private void LimpiarFormulario()
         {
-            txtNombre.Clear();
-            //txtNombre.Text = string.Empty;
-            //txtEdad.Text = string.Empty;
+            txtNombre.Text = string.Empty;
+            txtEdad.Text = string.Empty;
 
-            //rbtnFemenino.Checked = false;
-            //rbtnMasculino.Checked = false;            
+            rbtnFemenino.Checked = false;
+            rbtnMasculino.Checked = false;
 
             for (int i = 0; i < checkedListBox1.Items.Count; i++)
             {
                 checkedListBox1.SetItemChecked(i, false);
             }         
-        }
-
-        private void AbrirFormularioEnPanel(Form formularioHijo)
-        {
-            // Limpiar panel si ya hay algún control cargado
-            panel1.Controls.Clear();
-
-            // Configurar el formulario hijo
-            formularioHijo.TopLevel = false;
-            formularioHijo.FormBorderStyle = FormBorderStyle.None;
-            formularioHijo.Dock = DockStyle.Fill;
-
-            // Agregar al panel y mostrar
-            panel1.Controls.Add(formularioHijo);
-            formularioHijo.Show();
-        }
+        }        
 
         private void button2_Click(object sender, EventArgs e)
         {
