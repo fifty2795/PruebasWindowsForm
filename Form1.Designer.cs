@@ -41,6 +41,7 @@
             checkedListBox1 = new CheckedListBox();
             label2 = new Label();
             dataGridView1 = new DataGridView();
+            lblUsuario = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -160,12 +161,23 @@
             dataGridView1.Size = new Size(744, 188);
             dataGridView1.TabIndex = 11;
             // 
+            // lblUsuario
+            // 
+            lblUsuario.AutoSize = true;
+            lblUsuario.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
+            lblUsuario.Location = new Point(370, 34);
+            lblUsuario.Name = "lblUsuario";
+            lblUsuario.Size = new Size(104, 35);
+            lblUsuario.TabIndex = 12;
+            lblUsuario.Text = "Usuario";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(932, 733);
             ControlBox = false;
+            Controls.Add(lblUsuario);
             Controls.Add(dataGridView1);
             Controls.Add(label2);
             Controls.Add(checkedListBox1);
@@ -202,5 +214,6 @@
         private CheckedListBox checkedListBox1;
         private Label label2;
         private DataGridView dataGridView1;
+        private Label lblUsuario;
     }
 }
